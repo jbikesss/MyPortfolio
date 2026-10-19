@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050506">
+  <meta name="description" content="James — Computer Engineering student, developer, and problem solver.">
+  <title>James | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="curtain" aria-hidden="true"><i></i><i></i><b></b></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="James home"><span class="brand-mark">J.</span><span>JAMES</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#home">HOME</a><a href="#work">WORK</a><a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a><a href="#contact">CONTACT</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme"><span class="theme-dot"></span> <span id="themeLabel">LIGHT MODE</span></button>
+  </header>
+
+  <main>
+    <section class="stage" id="home" aria-label="Portrait of James">
+      <div class="stage-glow" aria-hidden="true"></div>
+      <canvas class="stage-dust" aria-hidden="true"></canvas>
+      <div class="name-row b" aria-hidden="true"><div class="name-marquee" data-depth="b"><div class="track"><div class="grp"><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em></div><div class="grp"><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em></div></div></div></div>
+      <div class="name-row a" aria-hidden="true"><div class="name-marquee" data-depth="a"><div class="track"><div class="grp"><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em></div><div class="grp"><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em><span>JAMES</span><em>✦</em></div></div></div></div>
+      <figure class="stage-photo">
+        <div class="photo-inner"><img src="profile-cutout.png" width="1230" height="2080" alt="Portrait of James in a suit" fetchpriority="high" onerror="this.onerror=null;this.src='profile.png';this.classList.add('is-raw');"></div>
+      </figure>
+      <a class="stage-cue" href="#work" aria-label="Scroll to my work"></a>
+    </section>
+
+    <section class="ticker" aria-hidden="true">
+      <div class="tick-row"><div class="tick-track"><div><span>Web Development</span><i>✦</i><span>PHP &amp; MySQL</span><i>✦</i><span>Embedded Systems</span><i>✦</i><span>Problem Solving</span><i>✦</i></div><div><span>Web Development</span><i>✦</i><span>PHP &amp; MySQL</span><i>✦</i><span>Embedded Systems</span><i>✦</i><span>Problem Solving</span><i>✦</i></div></div></div>
+      <div class="tick-row rev"><div class="tick-track"><div><span>Computer Engineering</span><i>✦</i><span>Always Learning</span><i>✦</i><span>Hands-on Projects</span><i>✦</i><span>Curious by Nature</span><i>✦</i></div><div><span>Computer Engineering</span><i>✦</i><span>Always Learning</span><i>✦</i><span>Hands-on Projects</span><i>✦</i><span>Curious by Nature</span><i>✦</i></div></div></div>
+    </section>
+
+    <section class="work-section section-wrap" id="work">
+      <div class="section-heading"><div><p class="eyebrow">01 / SELECTED PROJECTS</p><h2>Things I've<br><span class="muted-heading">been building.</span></h2></div><p class="heading-note">A collection of experiments, class projects, and ideas in progress.</p></div>
+      <article class="featured-project project-card">
+        <div class="project-index">FEATURED PROJECT / 001</div>
+        <div class="project-art login-art"><div class="browser-bar"><i></i><i></i><i></i><span>login_system / preview</span></div><div class="login-window"><div class="mini-logo">J<span>.</span></div><h3>Welcome back.</h3><p>Sign in to continue</p><div class="fake-input">Username or email</div><div class="fake-input">••••••••••</div><div class="fake-submit">SIGN IN&nbsp; ↗</div><div class="fake-small">Secure authentication · PHP / MySQL</div></div><span class="art-label">01 — WEB DEVELOPMENT</span></div>
+        <div class="project-info"><p class="project-type">WEB APP · PHP · MYSQL</p><h3>Login & Registration System</h3><p>A responsive user authentication project with registration, password hashing, validation, and login-attempt history. Built while learning full-stack web development.</p><div class="tag-list"><span>PHP</span><span>MySQL</span><span>HTML / CSS</span><span>XAMPP</span></div><a class="project-link" href="#contact">ASK ME ABOUT THIS PROJECT <span>↗</span></a></div>
+      </article>
+      <div class="project-grid">
+        <article class="project-card small-project"><div class="project-art robot-art"><div class="robot-head"><div class="robot-eye"></div><div class="robot-eye"></div><div class="robot-mouth"></div></div><div class="robot-body"></div><span class="art-label">IDEA / 002</span></div><div class="small-project-info"><p class="project-type">CONCEPT · EMBEDDED SYSTEMS</p><h3>AI Robot Teacher</h3><p>A proposed classroom assistant that can present uploaded lessons and answer student questions through an AI service.</p><div class="tag-list"><span>ESP32 / Raspberry Pi</span><span>AI</span><span>Education</span></div><span class="status"><i></i> CONCEPT IN DEVELOPMENT</span></div></article>
+        <article class="project-card small-project"><div class="project-art code-art"><div class="code-line wide"></div><div class="code-line medium"></div><div class="code-line short"></div><div class="code-line wide"></div><div class="code-line tiny"></div><div class="code-line medium"></div><div class="code-line short"></div><span class="art-label">LEARNING / 003</span><div class="code-corner"> &lt;/&gt; </div></div><div class="small-project-info"><p class="project-type">PRACTICE · PROGRAMMING</p><h3>Learning by Building</h3><p>Small exercises and experiments that help me strengthen my programming, problem-solving, and engineering fundamentals.</p><div class="tag-list"><span>Programming</span><span>Problem Solving</span><span>Continuous Learning</span></div><span class="status"><i></i> ONGOING</span></div></article>
+      </div>
+    </section>
+
+    <section class="about-section section-wrap" id="about">
+      <div class="section-heading"><div><p class="eyebrow">02 / A LITTLE ABOUT ME</p><h2>Problem solver.<br><span class="muted-heading">Digital generalist.</span></h2></div></div>
+      <div class="about-grid"><div class="about-big">I like understanding how things work — then finding ways to make them work better.</div><div class="about-copy"><p>I'm a Computer Engineering student exploring the intersection of software and hardware. From web applications to ideas for embedded systems, I enjoy turning classroom concepts into practical projects.</p><p>I'm still learning, experimenting, and improving. This portfolio is a living record of that process — the projects I finish, the ideas I explore, and the skills I develop along the way.</p><div class="about-facts"><div><span>01</span><strong>Curious mindset</strong></div><div><span>02</span><strong>Hands-on learning</strong></div><div><span>03</span><strong>Purpose-driven tech</strong></div></div></div></div>
+    </section>
+
+    <section class="skills-section section-wrap" id="skills">
+      <div class="section-heading"><div><p class="eyebrow">03 / TOOLKIT</p><h2>What I'm<br><span class="muted-heading">working with.</span></h2></div><p class="heading-note">Skills grow with every project. Here's my current learning toolkit.</p></div>
+      <div class="skills-grid">
+        <div class="skill-box"><span class="skill-num">01</span><div class="skill-icon">⌘</div><h3>Web Development</h3><p>Building responsive interfaces and learning server-side development.</p><div class="skill-tags">HTML · CSS · JavaScript · PHP</div></div>
+        <div class="skill-box"><span class="skill-num">02</span><div class="skill-icon">▤</div><h3>Databases</h3><p>Structuring data and connecting applications to relational databases.</p><div class="skill-tags">MySQL · SQL · XAMPP</div></div>
+        <div class="skill-box"><span class="skill-num">03</span><div class="skill-icon">⌁</div><h3>Computer Engineering</h3><p>Exploring the relationship between hardware, software, and systems.</p><div class="skill-tags">Embedded Systems · Electronics</div></div>
+        <div class="skill-box"><span class="skill-num">04</span><div class="skill-icon">↗</div><h3>Problem Solving</h3><p>Breaking down complex tasks, testing ideas, and learning from mistakes.</p><div class="skill-tags">Analysis · Research · Iteration</div></div>
+      </div>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div class="contact-main"><p class="eyebrow">04 / HAVE A PROJECT IN MIND?</p><h2>LET'S WORK<br><span class="outline-text">TOGETHER.</span></h2><p>I'm open to learning opportunities, collaboration, and conversations about technology.</p><a class="button button-light" href="mailto:your.email@example.com">SEND ME AN EMAIL <span>↗</span></a></div>
+      <div class="contact-links"><a href="mailto:your.email@example.com"><span>01</span><div><small>EMAIL</small><strong>your.email@example.com</strong></div><b>↗</b></a><a href="https://github.com/" target="_blank" rel="noreferrer"><span>02</span><div><small>GITHUB</small><strong>github.com/your-username</strong></div><b>↗</b></a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><span>03</span><div><small>LINKEDIN</small><strong>Connect professionally</strong></div><b>↗</b></a></div>
+    </section>
+  </main>
+  <footer class="footer section-wrap"><a class="brand" href="#home"><span class="brand-mark">J.</span><span>JAMES</span></a><span>DESIGNED WITH CURIOSITY · <span id="year"></span></span><a href="#home">BACK TO TOP ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
